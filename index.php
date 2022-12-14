@@ -24,6 +24,8 @@
       .card {
         width: 310px;
         border: none;
+        background: r;
+        height: 200px;
         border-radius: 15px;
       }
       .justify-content-around div {
@@ -55,8 +57,9 @@
       .mpesa {
         background-color: green !important;
       }
-      img {
+      .img {
         border-radius: 15px;
+        width: 100px;
       }
     </style>
   </head>
@@ -67,7 +70,7 @@
           <div class="mpesa"><span>Mpesa </span></div>
         </div>
         <div class="media mt-4 pl-2">
-          <img src="img.png" class="mr-3" height="75" />
+          <img src="img.png" class="mr-2"/>
           <div class="media-body">
             <h6 class="mt-1">Enter Amount & Number</h6>
           </div>

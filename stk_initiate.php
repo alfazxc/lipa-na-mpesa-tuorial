@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
   $Timestamp = date('YmdHis');    
   
   # Get the base64 encoded string -> $password. The passkey is the M-PESA Public Key
-  $Password = base64_encode($BusinessShortCode.$Passkey.$Timestamp);
+  $Password = base64_encode($BusinessShortCode.$Passkey.$Timestamp); .
 
   # header for access token
   $headers = ['Content-Type:application/json; charset=utf8'];
@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
   $initiate_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 
   # callback url
-  $CallBackURL = ' https://warm-crag-66023.herokuapp.com//callback_url.php';  
+  $CallBackURL = ' https://warm-crag-66023.herokuapp.com/callback_url.php';  
 
   $curl = curl_init($access_token_url);
   curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
